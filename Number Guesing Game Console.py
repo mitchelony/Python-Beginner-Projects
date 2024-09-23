@@ -38,5 +38,5 @@ def number_guessing_game():
             if attempts == 0:
                 print("Game Over! The Number Was " + str(secret_number) + ".")
                 break
-            print("You Have " + str(attempts) + " Attempts Left.")
+            print("You Have " + str(attempts) + " Attempts Left!")
 number_guessing_game()
