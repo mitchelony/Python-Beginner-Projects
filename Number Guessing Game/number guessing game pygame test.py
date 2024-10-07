@@ -5,18 +5,18 @@ import random
 pygame.init()
 
 # Set up window
-screen = pygame.display.set_mode((600, 400))
-pygame.display.set_caption("Number Guessing Game")
+screen = pygame.display.set_mode((720, 480))
+pygame.display.set_caption("Number Guessing Game By Mitchel Onyebuchi")
 
 # Define colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
+RED = (136, 8, 8)
+GREEN = (152, 251, 152)
+BLUE = (173, 216, 230)
 
 # Font for text
-font = pygame.font.Font(None, 36)
+font = pygame.font.Font(None, 48)
 
 # Game variables
 secret_number = random.randint(1, 10)
