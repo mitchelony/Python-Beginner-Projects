@@ -1,10 +1,10 @@
 def wordle():
     import random
-    # word_dict = ["apple", "brave", "crane", "doubt", "eagle",
-    #              "flame", "grape", "house", "input", "jolly",
-    #              "knock", "lemon", "mango", "noble", "ocean",
-    #              "pride", "quilt", "raven", "stone", "tiger"]
-    word_dict = ['apple']
+    word_dict = ["apple", "brave", "crane", "doubt", "eagle",
+                 "flame", "grape", "house", "input", "jolly",
+                 "knock", "lemon", "mango", "noble", "ocean",
+                 "pride", "quilt", "raven", "stone", "tiger"]
+    # word_dict = ['apple']
     class bcolors:
         YELLOW = '\033[0;33;40m'
         GREEN = '\033[0;32;40m'
