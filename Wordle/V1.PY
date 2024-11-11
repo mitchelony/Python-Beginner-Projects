@@ -2,12 +2,21 @@ def wordle():
     # Section 1: Imports and Game Setup
     import random  # For generating a random word from the dictionary
     
-    # List of potential words for the game
-    word_dict = ["apple", "brave", "crane", "doubt", "eagle",
-                 "flame", "grape", "house", "input", "jolly",
-                 "knock", "lemon", "mango", "noble", "ocean",
-                 "pride", "quilt", "raven", "stone", "tiger"]
-    
+    # # List of potential words for the game
+    # word_dict = ["apple", "brave", "crane", "doubt", "eagle",
+    #              "flame", "grape", "house", "input", "jolly",
+    #              "knock", "lemon", "mango", "noble", "ocean",
+    #              "pride", "quilt", "raven", "stone", "tiger"]
+    def getRandomWord():
+    # Choose the word to be the answer for testing purposes.
+    if len(sys.argv) > 1:
+        return sys.argv[1]
+    else:
+        file = open("words.txt", "r")
+        # Strip removes the new line at the end of each word.
+        words = [word.strip() for word in file.readlines()]
+
+        return random.choice(words)
     # Define text colors for correct (green), partially correct (yellow), and incorrect (red) guesses
     class bcolors:
         YELLOW = '\033[0;33;40m'
@@ -15,7 +24,7 @@ def wordle():
         RED = '\033[0;31;40m'
 
     # Randomly select a word from the dictionary
-    answer = random.choice(word_dict)
+    answer = getRandomWord()
     answer_list = list(answer)  # Convert selected word to a list of characters for easy comparison
     
     # Initialize game variables
