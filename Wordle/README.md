@@ -1,5 +1,3 @@
-Certainly! Here’s the updated README with a license section included at the end.
-
 Mitchel’s Python Wordle 🎉
 
 Welcome to Mitchel’s Python Wordle, where guessing words isn’t just a pastime—it’s a challenge! This version of Wordle is coded entirely in Python, using color-coded hints to guide you towards the winning word. Do you have what it takes to solve the puzzle within six tries?
