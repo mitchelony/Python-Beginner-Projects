@@ -49,14 +49,14 @@ This repository is a showcase of small Python projects that demonstrate various 
    ```bash
    git clone https://github.com/mitchelony/Python-Beginner-Projects.git
 
-	2.	Navigate to the desired project directory:
+2.	Navigate to the desired project directory:
+    ```bash
+    cd python-projects/<project-folder>
 
-cd python-projects/<project-folder>
 
-
-	3.	Run the Python file:
-
-python <filename>.py
+3.	Run the Python file:
+    ```bash
+    python <filename>.py
 
 License
 
