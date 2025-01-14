@@ -1,5 +1,3 @@
-Here’s the updated README.md in a code block for direct copying:
-
 # Python Projects Repository
 
 Welcome to my **Python Projects Repository**! This repository contains a collection of mini-projects and experiments I’ve created to explore and improve my Python programming skills. Each project is an example of practical Python applications.
@@ -49,7 +47,7 @@ This repository is a showcase of small Python projects that demonstrate various 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/python-projects.git
+   git clone https://github.com/mitchelony/Python-Beginner-Projects.git
 
 	2.	Navigate to the desired project directory:
 
