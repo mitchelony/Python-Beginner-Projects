@@ -13,6 +13,11 @@ def projectile_motion(initial_velocity, angle):
     height = ((initial_velocity**2) * ((math.sin(math.radians(angle)))**2)) / (2*9.8)
     return distance, height
 
-for angle in range(25, 86, 10):
-    distance, height = projectile_motion(15, angle)
-    print(f"When Angle is {angle} \nThe Range is {round(distance,2)} and the Height is {round(height, 2)}")
+# for angle in range(25, 86, 10):
+#     distance, height = projectile_motion(15, angle)
+#     print(f"When Angle is {angle} \nThe Range is {round(distance,2)} and the Height is {round(height, 2)}")
+
+
+for vi in range(5, 31, 5):
+    distance, height = projectile_motion(vi, 45)
+    print(f"When Initial Velcity is {vi}m/s \nThe Range is {round(distance,2)} and the Height is {round(height, 2)}")
