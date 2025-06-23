@@ -1,3 +1,4 @@
+from multiprocessing.connection import answer_challenge
 import random  # For generating a random word from the dictionary
 import sys
 
@@ -11,7 +12,7 @@ def get_random_word():
         return sys.argv[1]  # Return the word passed as a command-line argument
     else:
         # Open the file containing the list of words and choose a random one
-        with open("Wordle/word.txt", "r") as file:
+        with open("Python-Beginner-Projects/Wordle/word.txt", "r") as file:
             words = [word.strip() for word in file.readlines()]  # Read the words from the file and remove newlines
             return random.choice(words)  # Randomly choose one word from the list
 
@@ -79,7 +80,9 @@ def wordle():
     handles the game loop, and processes the guesses.
     """
     # Initialize game setup
-    answer = get_random_word()  # Get a random word as the answer
+    answer = get_random_word()
+    print(answer)
+    # Get a random word as the answer
     answer_list = list(answer)  # Convert the answer word into a list of characters for easy comparison
     tries = 6  # Maximum number of attempts the player has
     game_end = False  # Flag to control the game loop
